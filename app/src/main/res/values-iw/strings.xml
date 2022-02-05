@@ -5,4 +5,6 @@
     <string name="button_give_permission">תן הרשאה</string>
     <string name="display_the_barcode_clearly_in_front_of_the_camera">הצג את הברקוד באופן ברור מול המצלמה</string>
     <string name="history_fragment">היסטוריה</string>
+    <string name="scan_fragment">סריקה</string>
+    <string name="clear_history">ניקוי היסטוריה</string>
 </resources>

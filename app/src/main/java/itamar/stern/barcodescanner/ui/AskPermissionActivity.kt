@@ -8,10 +8,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import itamar.stern.barcodescanner.MainActivity
-import itamar.stern.barcodescanner.R
 import itamar.stern.barcodescanner.databinding.ActivityAskPermissionBinding
-import itamar.stern.barcodescanner.databinding.ActivityMainBinding
 
 class AskPermissionActivity : AppCompatActivity() {
     private val requestCodeCameraPermission = 1001

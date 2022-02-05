@@ -15,7 +15,9 @@ import com.google.android.gms.vision.Detector
 import com.google.android.gms.vision.barcode.Barcode
 import com.google.android.gms.vision.barcode.BarcodeDetector
 import itamar.stern.barcodescanner.R
+import itamar.stern.barcodescanner.ScannerApplication
 import itamar.stern.barcodescanner.databinding.FragmentScanBinding
+import itamar.stern.barcodescanner.models.HistoryItem
 import java.lang.Exception
 
 
@@ -76,6 +78,9 @@ class ScanFragment : Fragment() {
                 val qrCodes : SparseArray<Barcode> = detections.detectedItems
                 val code = qrCodes.valueAt(0)
                 binding.textScanResult.text = code.displayValue
+                ScannerApplication.roomDB.historyDao().addHistory(
+                    HistoryItem(code.displayValue)
+                )
             } else {
                 binding.textScanResult.text = ""
             }

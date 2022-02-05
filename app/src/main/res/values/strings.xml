@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">barcodeScanner</string>
-   <string name="history_fragment">History</string>
-   <string name="scan_fragment">Scan</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Barcode Scanner</string>
+    <string name="history_fragment">History</string>
+    <string name="scan_fragment">Scan</string>
     <string name="text_no_permission">There is no way to scan barcode without opening the camera. For giving permission to use the camera click the button</string>
-    <string name="button_give_permission">Give permossion</string>
+    <string name="button_give_permission">Give permission</string>
     <string name="display_the_barcode_clearly_in_front_of_the_camera">Display the barcode clearly in front of the camera</string>
+    <string name="clear_history">Clear history</string>
 
 </resources>
