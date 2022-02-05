@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">סורק ברקוד</string>
+    <string name="text_no_permission">אי אפשר לסרוק ברקוד ללא שימוש במצלמה. לנתינת הרשאה לשימוש במצלמה לחצו על הכפתור</string>
+    <string name="button_give_permission">תן הרשאה</string>
+    <string name="display_the_barcode_clearly_in_front_of_the_camera">הצג את הברקוד באופן ברור מול המצלמה</string>
+    <string name="history_fragment">היסטוריה</string>
+</resources>
