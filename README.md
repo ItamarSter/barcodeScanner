@@ -1,5 +1,5 @@
 # Barcode Scanner
-<a href="https://play.google.com/store/apps/details?id=itamar.stern.barcodeScanner">Download the app from Google play</a>
+<a href="https://play.google.com/store/apps/details?id=itamar.stern.barcodescanner">Download the app from Google play</a>
 ### Screenshots
 <pre>
 <img src="https://github.com/ItamarSter/barcodeScanner/blob/main/images/screenshotenglish1.jpeg" width="200" />        <img src="https://github.com/ItamarSter/barcodeScanner/blob/main/images/screenshotenglish2.jpeg" width="200" />
