@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             R.string.history_fragment
         ))
         TabLayoutMediator(tabs, viewPager) { tab, position ->
-            tab.text = tabsNames[position].toString()
+            tab.text = tabsNames[position]
         }.attach()
 
     }

@@ -2,6 +2,7 @@ package itamar.stern.barcodescanner.ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.util.SparseArray
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,7 +20,7 @@ import itamar.stern.barcodescanner.ScannerApplication
 import itamar.stern.barcodescanner.databinding.FragmentScanBinding
 import itamar.stern.barcodescanner.models.HistoryItem
 import java.lang.Exception
-
+const val TAG = "myLog"
 
 class ScanFragment : Fragment() {
 
@@ -36,9 +37,14 @@ class ScanFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onResume() {
+        super.onResume()
         setupControls()
+        binding.buttonScanAgain.visibility = View.VISIBLE
+        binding.buttonScanAgain.setOnClickListener {
+            setupControls()
+            binding.cameraSurfaceView.visibility = View.VISIBLE
+        }
     }
 
     private fun setupControls() {
@@ -81,6 +87,9 @@ class ScanFragment : Fragment() {
                 ScannerApplication.roomDB.historyDao().addHistory(
                     HistoryItem(code.displayValue)
                 )
+                binding.cameraSurfaceView.visibility = View.GONE
+
+
             } else {
                 binding.textScanResult.text = ""
             }

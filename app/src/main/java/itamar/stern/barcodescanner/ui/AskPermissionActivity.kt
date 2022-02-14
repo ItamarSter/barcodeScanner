@@ -27,6 +27,7 @@ class AskPermissionActivity : AppCompatActivity() {
             askForCameraPermission()
         } else {
             startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
 
@@ -52,6 +53,7 @@ class AskPermissionActivity : AppCompatActivity() {
         if(requestCode == requestCodeCameraPermission && grantResults.isNotEmpty()){
             if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 startActivity(Intent(this, MainActivity::class.java))
+                finish()
             } else {
                 binding.textView.visibility = View.VISIBLE
                 binding.button.visibility = View.VISIBLE

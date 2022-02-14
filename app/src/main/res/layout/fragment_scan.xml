@@ -9,24 +9,18 @@
         android:id="@+id/cameraSurfaceView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/viewDivider"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonScanAgain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitleScan" />
-    <View
-        android:id="@+id/viewDivider"
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/textScanResult"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/textScanResult"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:gravity="center"
         android:autoLink="web"
+        android:gravity="center"
         android:text=""
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,5 +38,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonScanAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D6CCCC"
+        android:clickable="true"
+        android:translationZ="10dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/textScanResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_replay_24"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
